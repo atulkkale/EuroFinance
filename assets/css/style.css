@@ -89,4 +89,18 @@ sub { bottom: -.25em; }
   max-width: 1350px;
   width: 61.5%;
   margin: 0 auto;
+  font-family: "Dosis-Regular", sans-serif;
+}
+
+/* Common styling. */
+.wrapper ul{ list-style: none;}
+.wrapper a{ text-decoration: none;}
+
+.capitalize{ 
+  display: inline-block;
+  text-transform: capitalize;
+}
+.uppercase{ 
+  display: inline-block;
+  text-transform: uppercase;
 }
