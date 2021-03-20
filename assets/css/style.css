@@ -217,3 +217,55 @@ header h2::first-letter{ text-transform: uppercase;}
 /*=================================
   Header styling end.
 =================================*/
+/*=================================
+  Main styling start.
+=================================*/
+/* Core business styling starts. */
+.core-business{ padding: 45px 0 85px 0;}
+
+.core-business h2{
+  margin-bottom: 25px;
+  color: #377cc5;
+  font-size: 26px;
+}
+
+.core-business h2::first-letter{ text-transform: uppercase;}
+
+.core-business ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.core-business ul a{ position: relative;}
+
+.core-business ul a::after{
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  color: #377cc5;
+  transform: translate(-50%,0);
+  text-align: center;
+}
+
+.core-business ul li:first-child a::after{ content: "Conferences";}
+
+.core-business ul li:nth-child(2) a::after{ content: "News";}
+
+.core-business ul li:nth-child(3) a::after{ content: "Training";}
+
+.core-business ul li:nth-child(4) a::after{ 
+  content: "Treasury Network";
+  bottom: -78px;
+}
+
+.core-business ul li:nth-child(5) a::after{ content: "Awards";}
+
+.core-business ul li:nth-child(6) a::after{ 
+  content: "Custom Solutions";
+  bottom: -78px;
+}
+
+.core-business ul img{ width: 80px;}
+/*=================================
+  Main styling end.
+=================================*/
