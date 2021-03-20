@@ -465,3 +465,179 @@ header h2::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
+/*=================================
+  Footer styling start.
+=================================*/
+footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
+
+.footer-top{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top figure{ flex-basis: 32%;}
+
+.footer-top figure a{ 
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-top figure a::after{
+  content: "Part of The Economist Group";
+  padding-top: 10px;
+  border-top: 1px solid #439fe3;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-top figure img{ width: 200px;}
+
+.footer-menu{ flex-basis: 32%;}
+
+.footer-menu li a{
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+}
+
+.footer-menu li:first-child a{
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer-menu li a:hover{
+  transition: .5s;
+  color: #ccc;
+}
+
+.footer-menu li a::first-letter{ text-transform: uppercase;}
+
+.social-icons{ flex-basis: 32%;}
+
+.social-icons h3{
+  margin: 10px 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.social-icons h3::first-letter{ text-transform: uppercase;}
+
+.social-icons ul{
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a{ 
+  display: inline-block;
+  color: #fff;
+  text-indent: -9000px;
+  text-align: center;
+}
+
+.social-icons ul li a::before {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  padding: 5px 6px;
+  margin-right: 15px;
+  float: left;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 100px;
+  font-weight: 400; 
+  text-indent: 0;
+}
+
+.social-icons ul li a:hover::before{
+  transition: .5s;
+  background-color: #ccc;
+}
+
+.social-icons a[title="Linked in"]::before{
+  font-family: "Font Awesome 5 Brands"; 
+  content: "\f0e1";
+  color: #2c5eab;
+  padding: 5px 7px;
+}
+
+.social-icons a[title="Twitter"]::before{
+  font-family: "Font Awesome 5 Brands"; 
+  content: "\f099";
+  color: #439fe3;
+}
+
+.social-icons a[title="Youtube"]::before{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f04b";
+  padding: 8px 10px;
+  font-size: 12px;
+  color: red;
+}
+
+.social-icons a[title="Facebook"]::before{
+  font-family: "Font Awesome 5 Brands"; 
+  content: "\f39e";
+  color: #1e3066;
+  padding: 5px 9px;
+}
+
+.copywrite{
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copywrite::before{
+  content: "backroundcolor";
+  height: 35px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #163563;
+  color: transparent;
+}
+
+.copywrite ul{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.copywrite ul li::before{
+  content: "|";
+  margin: 0 5px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.copywrite ul li:first-child::before{ display: none;}
+
+.copywrite ul a{
+  display: inline-block;
+  color: #fff;
+  font-size: 11px;
+}
+
+.copywrite ul a::first-letter{ text-transform: uppercase;}
+
+.copywrite ul a:hover{
+  transition: .5s;
+  color: #ccc;
+}
+
+.copywrite span{
+  color: #fff;
+  font-size: 11px;
+  text-transform: capitalize;
+  position: relative;
+}
+/*=================================
+  Footer styling end.
+=================================*/
