@@ -104,7 +104,7 @@ sub { bottom: -.25em; }
   display: inline-block;
   text-transform: uppercase;
 }
-.active{ background-color: #439fe3s;}
+.active{ background-color: #439fe3;}
 /*=================================
   Header styling start.
 =================================*/
@@ -351,6 +351,64 @@ header h2::first-letter{ text-transform: uppercase;}
 .latest-news p{
   font-size: 12px;
   line-height: 1.5;
+}
+
+/* Newsletter signup styling starts. */
+.newsletter{
+  padding: 50px 0;
+  background-image: linear-gradient(to right,#2c5eab,#1e3066 50%);
+}
+
+.newsletter .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter h2{
+  flex-basis: 49%;
+  color: #fff;
+  font-size: 26px;
+}
+
+.newsletter h2::first-letter{ text-transform: uppercase;}
+
+.newsletter-tagline{
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+}
+
+.newsletter form{ 
+  padding: 20px 30px;
+  border: 1px solid #0000002e;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  background-color: #0000002e;
+  border-radius: 10px;
+}
+
+.newsletter form input{ 
+  padding: 7px;
+  border: 1px solid #2c5eab;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  display: block;
+  outline: none;
+}
+
+.newsletter form input[type="submit"]{
+  margin: 0;
+  background-color: #439fe3;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.newsletter form input[type="submit"]:hover{
+  transition: .5s;
+  background-color: #2c5eab;
 }
 /*=================================
   Main styling end.
