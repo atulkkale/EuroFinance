@@ -95,6 +95,8 @@ sub { bottom: -.25em; }
 /* Common styling. */
 .wrapper ul{ list-style: none;}
 .wrapper a{ text-decoration: none;}
+.wrapper button{ outline: none;}
+.wrapper input{ outline: none;}
 
 .capitalize{ 
   display: inline-block;
@@ -112,7 +114,7 @@ sub { bottom: -.25em; }
 
 header{
   background-image: linear-gradient(to right,#2c5eab 40%,#2c5eab00), url("../images/backround1.jpg");
-  background-position: cover;
+  background-size: cover;
 }
 
 .logo-search{
@@ -275,7 +277,7 @@ header h2::first-letter{ text-transform: uppercase;}
   color: #fff;
 }
 
-.flagship h2{ font-size: 22px;}
+.flagship h2{ font-size: 26px;}
 
 .flagship h2::first-letter{ text-transform: uppercase;}
 
@@ -332,6 +334,7 @@ header h2::first-letter{ text-transform: uppercase;}
 .latest-news ul li:nth-child(4) p .capitalize{ display: inline;}
 
 .latest-news ul a{
+  width: 200px;
   display: block;
   color: #2c5eab;
   font-size: 18px;
