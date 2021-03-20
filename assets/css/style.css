@@ -410,6 +410,58 @@ header h2::first-letter{ text-transform: uppercase;}
   transition: .5s;
   background-color: #2c5eab;
 }
+
+/* Corporate styling starts. */
+.corporate .wrapper{
+  padding: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corporate-login h2{
+  width: 400px;
+  color: #2c5eab;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.corporate-login p{
+  width: 320px;
+  margin: 10px 0 40px 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.corporate-login p::first-letter{ text-transform: uppercase;}
+
+.corporate-login a{
+  padding: 7px 30px;
+  border: 1px solid #439fe3;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.corporate-login a::first-letter{ text-transform: uppercase;}
+
+.corporate-login a:nth-child(3){
+  background-color: #439fe3;
+  color: #fff;
+}
+
+.corporate-login a:nth-child(4){
+  margin-left: 10px;
+  background-color: #fff;
+  color: #439fe3;
+}
+
+.corporate-login a:nth-child(3):hover,.corporate-login a:nth-child(4):hover{
+  transition: .5s;
+  background-color: #1e3066;
+}
+
+.corporate img{ width: 400px;}
 /*=================================
   Main styling end.
 =================================*/
