@@ -266,6 +266,50 @@ header h2::first-letter{ text-transform: uppercase;}
 }
 
 .core-business ul img{ width: 80px;}
+
+/* Flagship styling starts. */
+.flagship{
+  padding: 110px 0;
+  background-image: linear-gradient(to right,#2c5eab,#2c5eab00 50%), url("../images/backroundimg2.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.flagship h2{ font-size: 22px;}
+
+.flagship h2::first-letter{ text-transform: uppercase;}
+
+.flagship-tagline{
+  width: 280px;
+  margin: 15px 0;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.flagship p{
+  font-size: 13px;
+  width: 480px;
+  line-height: 1.5;
+}
+
+.flagship a{
+  padding: 7px 30px;
+  border-radius: 2px;
+  margin: 25px 0;
+  display: inline-block;
+  background-color: #439fe3;
+  color: #fff;
+  font-size: 13px;
+}
+
+.flagship a:hover{
+  transition: .5s;
+  background-color: #2c5eab;
+}
+
+.flagship a::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
