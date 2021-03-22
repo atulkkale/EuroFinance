@@ -940,6 +940,58 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   font-size: 13px;
   text-transform: capitalize;
 }
+
+/* Become section starts. */
+.become .wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.become .wrapper div{ 
+  padding: 30px 45px;
+  background-image: radial-gradient(circle,#475c88,#4787c0);
+}
+
+.become .wrapper h3{
+  color: #89ccff;
+  font-size: 18px;
+}
+
+.become .wrapper ul{
+  width: 210px; 
+  padding: 25px 0;
+  margin-left: 38px;
+  list-style: outside;
+}
+
+.become .wrapper h3::first-letter{ text-transform: uppercase;}
+
+.become .wrapper ul li{
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.become .wrapper ul li:nth-child(2){ margin-top: 10px;}
+
+.become .wrapper ul li::first-letter{ text-transform: uppercase;}
+
+.become .wrapper a{
+  padding: 10px 20px;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: #439fe3;
+  color: #fff;
+  font-size: 13px;
+}
+
+.become .wrapper a::first-letter{ text-transform: uppercase;}
+
+.become .wrapper a:hover{
+  transition: .5s;
+  background-color: #1e3066;
+}
 /*=================================
   Main styling end.
 =================================*/
