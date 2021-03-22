@@ -941,7 +941,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   text-transform: capitalize;
 }
 
-/* Become section starts. */
+/* Become styling starts. */
 .become .wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1012,6 +1012,59 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 }
 
 .conferences-event p::first-letter{ text-transform: uppercase;}
+
+/* Conferences signup styling start. */
+.conferences-signup{
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgb(44, 94, 171), rgb(30, 48, 102));
+  box-shadow: inset 0px -1px 10px #0000005e;
+}
+
+.conferences-signup .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conferences-signup h2{
+  color: #fff;
+  font-size: 25px;
+}
+
+.conferences-sign-tagline{
+  margin: 10px 0;
+  display: block;
+  font-size: 13px;
+}
+
+.conferences-sign-tagline::first-letter,.conferences-signup h2::first-letter{ text-transform: uppercase;}
+
+.conferences-signup input{
+  width: 230px;
+  padding: 7px 10px;
+  border: 1px solid #439fe3;
+  font-size: 13px;
+  outline: none;
+}
+
+.conferences-signup button{
+  padding: 6px 25px;
+  border: 2px solid #439fe3;
+  margin-left: -5px;
+  background-color: #439fe3;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+}
+
+.conferences-signup button:hover{
+  transition: .5s;
+  background-color: #1e3066;
+}
+
+.conferences-signup button::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
