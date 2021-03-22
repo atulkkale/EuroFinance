@@ -859,7 +859,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   Conferences page styling starts.
 ===========================================================================================*/
 /* Header styling start. */
-.conferences-header{ padding: 0 0 90px 0;}
+.conferences-header{ padding: 0 0 50px 0;}
 .conferences-heading{ padding: 90px 0 0 0;}
 
 .conferences-date{ 
@@ -888,3 +888,58 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 /*=========================================================================================
   Conferences page styling ends.
 ===========================================================================================*/
+/*=================================
+  Main styling start.
+=================================*/
+/* Page tracker styling start. */
+.page-tracker{ padding: 20px 0;}
+
+.page-tracker ul{ display: flex;}
+
+.page-tracker ul li a,.page-tracker ul li{
+  color: #393939;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.page-tracker ul li:nth-child(2){ margin: 0 10px;}
+
+.page-tracker ul li:nth-child(3){ font-weight: 600;}
+
+/* All conferences styling starts. */
+.all-conferences h2{
+  color: #377cc5;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.all-conferences ul{
+  margin: 45px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 31.5%);
+  justify-content: space-between;
+  grid-row-gap: 20px;
+}
+
+.all-conferences ul li figure img{ 
+  width: 100%;
+  height: 100%;
+}
+
+.all-conferences ul li h3 a{
+  width: 250px;
+  margin: 15px 0 5px 0;
+  display: inline-block;
+  color: #377cc5;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.all-conferences-date{
+  color: #393939;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+/*=================================
+  Main styling end.
+=================================*/
