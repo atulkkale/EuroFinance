@@ -854,3 +854,37 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 
   .copywrite::before{ height: 160px;}
 }
+
+/*=========================================================================================
+  Conferences page styling starts.
+===========================================================================================*/
+/* Header styling start. */
+.conferences-header{ padding: 0 0 90px 0;}
+.conferences-heading{ padding: 90px 0 0 0;}
+
+.conferences-date{ 
+  margin: 20px 0;
+  display: block;
+  color: #6cbfff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.conferences-findout{
+  padding: 7px 30px;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: #439fe3;
+  color: #fff;
+  font-size: 13px;
+}
+
+.conferences-findout::first-letter{ text-transform: uppercase;}
+
+.conferences-findout:hover{
+  transition: .5s;
+  background-color: #1e3066;
+}
+/*=========================================================================================
+  Conferences page styling ends.
+===========================================================================================*/
