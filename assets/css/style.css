@@ -110,7 +110,7 @@ sub { bottom: -.25em; }
 /*=================================
   Header styling start.
 =================================*/
-.hamburger,.top{ display: none;}
+.hamburger,.top,.close{ display: none;}
 
 /* Hamburger style. */
 .hamburger{
@@ -118,6 +118,8 @@ sub { bottom: -.25em; }
   width: 20px;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
+  position: relative;
+  top: 7px;
   text-indent: -9000px;
   cursor: pointer;
 }
@@ -224,7 +226,7 @@ header h2{
 header h2::first-letter{ text-transform: uppercase;}
 
 .tagline{ 
-  width: 450px;
+  max-width: 450px;
   margin-top: 10px;
   display: block;
   color: #89ccff;
@@ -469,14 +471,14 @@ header h2::first-letter{ text-transform: uppercase;}
 }
 
 .corporate-login h2{
-  width: 400px;
+  max-width: 400px;
   color: #2c5eab;
   font-size: 26px;
   text-transform: capitalize;
 }
 
 .corporate-login p{
-  width: 320px;
+  max-width: 320px;
   margin: 10px 0 40px 0;
   font-size: 13px;
   line-height: 1.4;
@@ -690,3 +692,165 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 /*=================================
   Footer styling end.
 =================================*/
+
+/* Media query start. */
+@media only screen and (max-width: 1330px){
+  .latest-news ul{ 
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .latest-news p{ margin-bottom: 10px;}
+
+  .corporate .wrapper{ flex-direction: column;}
+
+  .corporate figure{ margin-top: 50px;}
+}
+
+/* Media query for 900px starts. */
+@media only screen and (max-width: 900px){
+  .top{
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .logo-search,.copywrite,.newsletter .wrapper{ flex-direction: column;}
+
+  .logo-search h1{ margin-bottom: 10px;}
+
+  .menu{ 
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    flex-direction: column;
+  }
+
+
+  .menu li{ 
+    display: none;
+    /* height: auto; */
+    /* margin: 0; */
+  }
+
+  /* .menu li a{ position: static;} */
+
+  /* .menu a::before{ display: none;} */
+
+  .menu li:last-child,.hamburger{ display: block;}
+  /* delte */
+  /* .menu li:last-child{ display: none;} */
+
+  .core-business ul{ flex-wrap: wrap;}
+
+  .core-business ul li{ margin: 0 10px 50px 10px;}
+
+  .flagship-tagline{ width: auto;}
+
+  .flagship p{ width: auto;}
+
+  .newsletter form{ margin-top: 50px;}
+
+  .corporate .wrapper{ padding:  85px 10px;}
+
+  .corporate-login p{ margin: 10px 0 30px 0;}
+
+  .corporate-login a{ 
+    margin: 10px 0 0 0; 
+    display: block; 
+    text-align: center;
+  }
+
+  .corporate-login a:nth-child(4){ margin: 10px 0 0 0;}
+
+  .corporate img{ width: 300px;}
+
+  .footer-top{ 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-menu{ 
+    padding: 10px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: 70px 0 40px 0;
+  }
+
+  .copywrite::before{ height: 130px;}
+
+  .copywrite ul{ 
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .copywrite ul li::before{ display: none;}
+
+  .copywrite span{ margin: 5px 0;}
+
+  .logo-search button:hover{ background-color: #439fe3;}
+
+  .menu li:hover{ background-color: transparent;}
+
+  .flagship a:hover{ background-color: #439fe3;}
+
+  .newsletter form input[type="submit"]:hover{ background-color: #439fe3;}
+
+  .corporate-login a:nth-child(3):hover{ background-color: #439fe3;}
+  
+  .corporate-login a:nth-child(4):hover,.social-icons ul li a:hover::before{ background-color: #fff;}
+
+  .footer-menu li a:hover,.copywrite ul a:hover{ color: #fff;}
+}
+
+/* Media query for 350px starts. */
+@media only screen and (max-width:350px){
+  .logo-search img{ width: 100%;}
+
+  .logo-search input{
+    width: 99%;
+    padding: 0;
+  }
+
+  .logo-search button{ 
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+  .core-business h2{ text-align: center;}
+
+  .core-business ul{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest-news ul{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .latest-news h2{ text-align: center;}
+
+  .latest-news ul a{ width: auto;}
+
+  .newsletter form{
+    width: 80%;
+    padding: 20px;
+  }
+
+  .corporate img{ width: 100%;}
+
+  .footer-menu{ margin: 90px 0 40px 0;}
+
+  .footer-top figure img{ width: 100%;}
+
+  .footer-top figure a::after{
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .copywrite::before{ height: 160px;}
+}
