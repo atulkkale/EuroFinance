@@ -885,9 +885,6 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   transition: .5s;
   background-color: #1e3066;
 }
-/*=========================================================================================
-  Conferences page styling ends.
-===========================================================================================*/
 /*=================================
   Main styling start.
 =================================*/
@@ -921,13 +918,20 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   grid-row-gap: 20px;
 }
 
+.all-conferences ul li figure{ overflow: hidden;}
+
 .all-conferences ul li figure img{ 
   width: 100%;
   height: 100%;
 }
 
+.all-conferences ul li figure img:hover{
+  transition: .5s;
+  transform: scale(1.1);
+}
+
 .all-conferences ul li h3 a{
-  width: 250px;
+  max-width: 250px;
   margin: 15px 0 5px 0;
   display: inline-block;
   color: #377cc5;
@@ -959,7 +963,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 }
 
 .become .wrapper ul{
-  width: 210px; 
+  max-width: 210px; 
   padding: 25px 0;
   margin-left: 38px;
   list-style: outside;
@@ -1068,3 +1072,54 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 /*=================================
   Main styling end.
 =================================*/
+
+/* Conferences page responsive stylesheet starts. */
+@media only screen and (max-width: 1150px){
+  .all-conferences ul{ grid-template-columns: 48% 48%;}
+
+  .become .wrapper{ 
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .conferences-signup .wrapper{ flex-direction: column;}
+
+  .conferences-signup form{ margin-top: 10px;}
+}
+
+/* Media query for 900px start. */
+@media only screen and (max-width: 900px){
+  .conferences-findout:hover,.become .wrapper a:hover,.conferences-signup button:hover{ background-color: #439fe3;}
+
+  .all-conferences ul li figure img:hover{ transform: scale(1);}
+}
+
+/* Media query for 800px start. */
+@media only screen and (max-width: 800px){
+  .all-conferences ul{ 
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+  }
+
+  .become .wrapper div{ padding: 30px 10px;}
+
+  .become .wrapper ul{ margin-left: 20px;}
+
+  .conferences-signup form{ margin-top: 20px;}
+
+  .conferences-signup input{ 
+    width: 96%;
+    padding: 7px 0 7px 5px;
+  }
+
+  .conferences-signup button{
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+}
+/* Conferences page responsive stylesheet end. */
+
+/*=========================================================================================
+  Conferences page styling ends.
+===========================================================================================*/
