@@ -992,6 +992,26 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   transition: .5s;
   background-color: #1e3066;
 }
+
+/* Conferences event styling starts. */
+.conferences-event{ padding: 50px 0;}
+
+.conferences-event h2{
+  font-size: 25px;
+  color: #4782b9;
+}
+
+.conferences-event h2::first-letter{ text-transform: uppercase;}
+
+.conferences-event p{
+  margin: 15px 0 25px 0;
+  display: inline-block;
+  font-size: 13px;
+  color: #393939;
+  line-height: 1.4;
+}
+
+.conferences-event p::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
