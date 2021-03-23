@@ -1226,7 +1226,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 
 /* News banking styling start. */
 .news-banking .wrapper .news-info-thumb{
-  margin: 20px 270px 10px 0;
+  margin: 20px 270px 15px 0;
   padding-left: 20px;
   border: 1px solid #c8d7e6;
   display: flex;
@@ -1272,6 +1272,71 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   height: 220px;
 }
 
+/* Top news styling starts. */
+.top-news .top-eachnews-all{
+  margin: 0 270px 0 0;
+  padding: 15px 0;
+  border-top: 1px solid #c8d7e6;
+  border-bottom: 1px solid #c8d7e6;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.top-each-news:first-child{ 
+  padding-right: 15px;
+  border-right: 1px solid #c8d7e6;
+}
+
+.top-each-news:nth-child(2){ padding: 0 15px;}
+
+.top-each-news:nth-child(3){ 
+  padding-left: 15px;
+  border-left: 1px solid #c8d7e6;
+}
+
+.top-each-news figure{ height: 120px;}
+
+.top-each-news figure img{ 
+  width: 100%;
+  height: 100%;
+}
+
+.top-eachnews-all h3 a{
+  margin: 15px 0 10px 0;
+  display: inline-block;
+  color: #1e3066;
+  font-size: 13px;
+}
+
+.top-eachnews-all h2 a{
+  display: inline-block;
+  color: #005FAA;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.top-eachnews-all h3:hover a,.top-eachnews-all h3:hover a span,.top-eachnews-all h2:hover a,.top-eachnews-all h2:hover a span{
+  transition: .5s;
+  text-decoration: underline;
+}
+
+.top-news-date{
+  margin: 5px 0;
+  display: inline-block;
+  color: #999;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.top-eachnews-all p{
+  color: #4a4a4a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.top-each-news:nth-child(3) span{ display: inline;}
+
+.top-eachnews-all h3 a::first-letter,.top-eachnews-all h2 a::first-letter,.top-eachnews-all p::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
