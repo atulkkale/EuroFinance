@@ -1259,6 +1259,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 }
 
 .news-info p{ 
+  margin-bottom: 10px;
   color: #4a4a4a;
   font-size: 11px;
   line-height: 1.5;
@@ -1389,7 +1390,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 }
 
 .news-each-window{ 
-  width: 33%; 
+  flex-basis: 100%; 
   margin-right: 15px;
   position: relative;
 }
@@ -1529,6 +1530,74 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 /*=================================
   Main styling end.
 =================================*/
+/* Responsive stylesheet starts for news page. */
+@media only screen and (max-width:1150px){
+  .news-banking .wrapper .news-info-thumb{ flex-direction: column;}
+
+  .news-banking-thumbnail img{ 
+    margin: 20px 0 0 0;
+    width: 96%;
+    height: auto;
+  }
+
+  .news-show-more ul{ grid-template-columns: 1fr 1fr;}
+
+  .news-show-more ul li:nth-child(2),.news-show-more ul li:nth-child(4),.news-show-more ul li:nth-child(6),.news-show-more ul li:nth-child(8),.news-show-more ul li:nth-child(10),.news-show-more ul li:nth-child(12),.news-show-more ul li:nth-child(14),.news-show-more ul li:nth-child(16),.news-show-more ul li:nth-child(18){ 
+    padding: 0 10px 0 15px;
+    border-left: 1px solid #c8d7e6;
+    border-right: none;
+  }
+
+  .news-show-more ul li:nth-child(1),.news-show-more ul li:nth-child(3),.news-show-more ul li:nth-child(5),.news-show-more ul li:nth-child(7),.news-show-more ul li:nth-child(9),.news-show-more ul li:nth-child(11),.news-show-more ul li:nth-child(13),.news-show-more ul li:nth-child(15),.news-show-more ul li:nth-child(17){ 
+    padding: 0 10px 0 0;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+/* Media query for 900px starts here. */
+@media only screen and (max-width:900px){
+  .aside{ display: none;}
+
+  .news-banking .wrapper .news-info-thumb{ margin: 20px 0px 15px 0;}
+
+  .news-info p{ margin-right: 10px;}
+
+  .top-news .top-eachnews-all,.news-windows-all{ margin: 0;}
+
+  .news-show-more ul{ margin: 15px 0 0px 0px;}
+
+  .show-more-js a{ margin: 40px 0 30px 0;}
+
+  .aside ul li a:hover,.news-info h3 a:hover,.news-info h2 a:hover,.news-info h2 a:hover span,.news-show-more ul li a:hover,.news-show-more ul li a:hover span,.news-each-window h3 a:hover,.news-each-window h3 a:hover span,.news-each-window ul a:hover,.top-eachnews-all h3:hover a,.top-eachnews-all h3:hover a span,.top-eachnews-all h2:hover a,.top-eachnews-all h2:hover a span{ text-decoration: none;}
+
+  .show-more-js a:hover{ background-color: #439fe3;}
+
+  .icon-btn-left:hover,.icon-btn-right:hover{ opacity: 1;}
+
+  .top-each-news figure img:hover{ transform: scale(1);}
+
+  .aside-top a:hover{ background-color: #4cbcf0;}
+}
+
+/* Media query for 550px starts here. */
+@media only screen and (max-width:550px){
+  .top-news .top-eachnews-all{ grid-template-columns: 1fr;}
+
+  .top-news .wrapper .top-each-news{
+    padding: 0;
+    border: none;
+  }
+
+  .top-each-news figure img{ margin-top: 20px;}
+
+  .news-show-more ul{grid-template-columns: 1fr;}
+
+  .news-show-more .wrapper ul li{
+    padding: 0;
+    border: none;
+  }
+}
 /*=========================================================================================
   News page styling ends.
 ===========================================================================================*/
