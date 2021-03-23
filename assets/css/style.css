@@ -1266,7 +1266,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 
 .news-info h3 a::first-letter,.news-info p::first-letter{ text-transform: uppercase;}
 
-.news-thumbnail img{
+.news-banking-thumbnail img{
   margin-left: 20px;
   width: 377px;
   height: 220px;
@@ -1337,6 +1337,113 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 .top-each-news:nth-child(3) span{ display: inline;}
 
 .top-eachnews-all h3 a::first-letter,.top-eachnews-all h2 a::first-letter,.top-eachnews-all p::first-letter{ text-transform: uppercase;}
+
+/* Must see styling start. */
+.icon-btn-left,.icon-btn-right{
+  height: 100%;
+  padding: 0 3px;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translate(0,-50%);
+  background-color: #ffffffcc;
+  color: #6f6666;
+  font-size: 22px;
+  text-indent: -9000px;
+  cursor: pointer;
+}
+
+.icon-btn-left:hover,.icon-btn-right:hover{
+  transition: .5s;
+  opacity: .7;
+}
+
+.icon-btn-left{ left:0;}
+
+.icon-btn-right{ right: 0;}
+
+.icon-btn-left::after,.icon-btn-right::after{
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  float: right;
+  position: relative;
+  top: 50%;
+  text-indent: 0;
+}
+
+.icon-btn-left::after{ content: "\f053";}
+
+.icon-btn-right::after{ content: "\f054";}
+
+.news-windows-all{
+  margin: 0px 270px 0px 0px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-each-window{ 
+  width: 33%; 
+  margin-right: 15px;
+  position: relative;
+}
+
+.news-mustsee h2{
+  margin: 15px 0 10px 0;
+  color: #005FAA;
+  font-size: 23px;
+}
+
+.news-mustsee h2::first-letter{ text-transform: uppercase;}
+
+ .news-thumbnail{ 
+   width: 220px;
+   height: 125px;
+  }
+
+.news-thumbnail img{ width: 100%;}
+
+.news-playbtn{
+  padding: 10px 11px 10px 15px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 44px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.news-playbtn img{ height: 20px;}
+
+.news-each-window ul{ 
+  margin: 15px 0 10px 0;
+  display: flex;
+}
+
+.news-each-window ul li:first-child::after{
+  content: "|";
+  margin: 0 5px;
+}
+
+.news-each-window ul a{
+  display: inline-block;
+  color: #1e3066;
+  font-size: 13px;
+}
+
+.news-each-window h3 a:hover,.news-each-window h3 a:hover span,.news-each-window ul a:hover{ text-decoration: underline;}
+
+.news-each-window h3 a{
+  display: inline-block;
+  color: #005FAA;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.news-each-window ul a::first-letter,.news-each-window h3 a::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
