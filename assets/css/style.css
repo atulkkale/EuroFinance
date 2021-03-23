@@ -1127,9 +1127,107 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   News page styling starts.
 ===========================================================================================*/
 /* Header style. */
+.news-container .wrapper{
+  max-width: 1350px;
+  width: 71%;
+  margin: 0 auto;
+}
+
 .news-header{
   background-image: linear-gradient(to right,#2c5ea8,#1c3362);
 }
+/*=================================
+  Main styling start.
+=================================*/
+/* Aside styling start. */
+.aside{
+  margin: 25px 19.2% 0 0;
+  width: 250px;
+  float: right;
+}
+
+.aside .wrapper{ width: auto;}
+
+.aside-top{
+  padding: 15px;
+  background-image: linear-gradient(50deg,#1e2f65,#4cbcf0);
+}
+
+.aside-top p{
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.aside-top p::first-letter{ text-transform: uppercase;}
+
+.aside-top a{
+  padding: 10px 0;
+  display: block;
+  background-color: #4cbcf0;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+.aside-top a:hover{
+  transition: .5s;
+  background-color: #1c3362;
+}
+
+.aside-top a::first-letter{ text-transform: uppercase;}
+
+.aside-bottom{ margin: 15px 0;}
+
+.aside-bottom ul{ 
+  padding: 0 10px;
+  border: 1px solid #e4ecf3;
+}
+
+.aside ul li{ 
+  padding: 10px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.aside ul li:last-child{ border: none;}
+
+.aside ul li a{
+  display: inline-block;
+  color: #1E3066;
+  font-size: 13px;
+}
+
+.aside ul li a:hover{
+  text-decoration: underline;
+}
+
+.aside ul li h3{ margin: 3px 0 5px 0;}
+
+.aside ul li h3 a{
+  display: inline-block;
+  color: #005faa;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.aside-bottom h3:first-child{
+  padding: 10px;
+  background-image: linear-gradient(50deg,#1d3160,#2c5ea8);
+  color: #fff;
+  font-size: 17px;
+}
+
+.aside-date{
+  display: inline-block;
+  color: #999;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.aside-bottom h3:first-child::first-letter,.aside ul li a::first-letter,.aside ul li h3 a::first-letter{  text-transform: uppercase;}
+/*=================================
+  Main styling end.
+=================================*/
 /*=========================================================================================
   News page styling ends.
 ===========================================================================================*/
