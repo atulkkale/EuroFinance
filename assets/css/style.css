@@ -1294,11 +1294,16 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   border-left: 1px solid #c8d7e6;
 }
 
-.top-each-news figure{ height: 120px;}
+.top-each-news figure{ height: 120px; overflow: hidden;}
 
 .top-each-news figure img{ 
   width: 100%;
   height: 100%;
+}
+
+.top-each-news figure img:hover{
+  transition: .5s;
+  transform: scale(1.1);
 }
 
 .top-eachnews-all h3 a{
@@ -1444,6 +1449,83 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 }
 
 .news-each-window ul a::first-letter,.news-each-window h3 a::first-letter{ text-transform: uppercase;}
+
+/* News show more styling start. */
+.news-show-more ul{
+  margin: 15px 270px 0px 0px;
+  padding-top: 15px;
+  border-top: 1px solid #c8d7e6;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 25px;
+}
+
+.news-show-more ul li:first-child,.news-show-more ul li:nth-child(4),.news-show-more ul li:nth-child(7),.news-show-more ul li:nth-child(10),.news-show-more ul li:nth-child(13),.news-show-more ul li:nth-child(16){ padding-right: 10px;}
+.news-show-more ul li:nth-child(2),.news-show-more ul li:nth-child(5),.news-show-more ul li:nth-child(8),.news-show-more ul li:nth-child(11),.news-show-more ul li:nth-child(14),.news-show-more ul li:nth-child(17){ 
+  padding: 0 10px 0 15px;
+  border-left: 1px solid #c8d7e6;
+  border-right: 1px solid #c8d7e6;
+}
+.news-show-more ul li:nth-child(3),.news-show-more ul li:nth-child(6),.news-show-more ul li:nth-child(9),.news-show-more ul li:nth-child(12),.news-show-more ul li:nth-child(15),.news-show-more ul li:nth-child(18){ padding-left: 15px;}
+
+.news-show-more ul li a{
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #1e3066;
+  font-size: 12px;
+}
+
+.news-show-more ul li a:hover,.news-show-more ul li a:hover span{
+  transition: .5s;
+  text-decoration: underline;
+}
+
+.news-show-more ul li h3 a{
+  margin: 0;
+  display: inline-block;
+  color: #005FAA;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.news-show-more ul li a::first-letter{ text-transform: uppercase;}
+
+.news-shoemore-date{
+  margin: 5px 0;
+  display: inline-block;
+  color: #999;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.news-show-more p{
+  color: #4a4a4a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.show-more-js{
+  max-width: 1350px;
+  display: block;
+  text-align: center;
+}
+
+.show-more-js a{
+  margin: 40px 270px 30px 0;
+  padding: 7px 40px;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: #439fe3;
+  color: #fff;
+  font-size: 13px;
+}
+
+.show-more-js a:hover{
+  transition: .5s;
+  background-color: #1c3362;
+}
+
+.news-show-more p::first-letter,.show-more-js a::first-letter{ text-transform: uppercase;}
 /*=================================
   Main styling end.
 =================================*/
