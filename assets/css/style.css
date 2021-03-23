@@ -1133,16 +1133,14 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   margin: 0 auto;
 }
 
-.news-header{
-  background-image: linear-gradient(to right,#2c5ea8,#1c3362);
-}
+.news-header{ background-image: linear-gradient(to right,#2c5ea8,#1c3362);}
 /*=================================
   Main styling start.
 =================================*/
 /* Aside styling start. */
 .aside{
-  margin: 25px 19.2% 0 0;
   width: 250px;
+  margin: 0 14.5% 0 0;
   float: right;
 }
 
@@ -1225,6 +1223,55 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 }
 
 .aside-bottom h3:first-child::first-letter,.aside ul li a::first-letter,.aside ul li h3 a::first-letter{  text-transform: uppercase;}
+
+/* News banking styling start. */
+.news-banking .wrapper .news-info-thumb{
+  margin: 20px 270px 10px 0;
+  padding-left: 20px;
+  border: 1px solid #c8d7e6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-info h3 a{
+  margin: 15px 0 10px 0;
+  display: inline-block;
+  color: #1E3066;
+  font-size: 13px;
+}
+
+.news-info h3 a:hover,.news-info h2 a:hover,.news-info h2 a:hover span{
+  transition: .5s;
+  text-decoration: underline;
+}
+
+.news-info h2 a{
+  color: #005FAA;
+  font-size: 22px;
+}
+
+.news-info-date{
+  margin: 5px 0;
+  display: inline-block;
+  color: #999;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.news-info p{ 
+  color: #4a4a4a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.news-info h3 a::first-letter,.news-info p::first-letter{ text-transform: uppercase;}
+
+.news-thumbnail img{
+  margin-left: 20px;
+  width: 377px;
+  height: 220px;
+}
+
 /*=================================
   Main styling end.
 =================================*/
