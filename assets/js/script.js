@@ -99,7 +99,6 @@ var form = {
   validate: function (e) { // This function validate field on event keyup.
     var regex;
     var currelemnt = e.target;
-    // console.log(form.formInputs['2'])
     switch (currelemnt) {
     case form.formInputs['0']:
       regex = [/^[a-zA-Z]{2,15}$/,2,16,'lenerror','syntaxerror']; // First name regex.
@@ -133,9 +132,6 @@ var form = {
     default:
     break;
     }
-    // currelemnt === form.formInputs['0']
-    //   ? (regex = [/^[a-zA-Z]{2,15}$/,2,16,'lenerror','syntaxerror']) // Regular exrpression for first name.
-    //   : (regex = [/^[a-zA-Z0-9]+@[a-zA-Z]{0,7}\.[a-zA-Z]{2,5}$/,5,20,'gmaillenerror','gmailerror']); // Regular exrpression for email.
 
     if(!(currelemnt.value.length > regex[1] && currelemnt.value.length < regex[2])){
       removeOrAddError(regex[3],currelemnt);
@@ -146,7 +142,7 @@ var form = {
     }
   },
   submit: function (e) {
-    // e.preventDefault(); // For form to submit data remove this line.
+    e.preventDefault(); // For form to submit data remove this line.
     a = {};
     for(var input in form.errorCount){
       if(form.errorCount[input] === null){
@@ -157,7 +153,6 @@ var form = {
     }
   },
 };
-console.log(form.formInputs)
 function removeOrAddError(apply, element) { // This function shows and removes error massage on each fields.
 
   var errorcode = ['lenerror','validfield','syntaxerror','gmaillenerror','gmailerror','phonelenerror','phoneerror','passworderror']; // Store all error code.
@@ -212,9 +207,31 @@ function removeOrAddError(apply, element) { // This function shows and removes e
 for (input of form.formInputs) {
   input.addEventListener('keyup', form.validate); // Fire validate funciton.
   var nameattr = input.getAttribute('placeholder');
-  // console.log(nameattr,input)
   input.parentNode.setAttribute('data-field-name', nameattr); // Set attribute to each field to show specific error message.
 }
 
 var submit = document.querySelector('input[type=submit]');
-submit.addEventListener('click', form.submit); // Fire submit function.
+if(submit) submit.addEventListener('click', form.submit); // Fire submit function.
+
+// Video slider.
+var sliderWindow = document.querySelector('.news-windows-all');
+var leftBtn = document.querySelector('.icon-btn-left');
+var rightBtn = document.querySelector('.icon-btn-right');
+var lastChild = document.querySelector('.news-each-window:last-child');
+var eachWindowSize = 0;
+var maxSize = null;
+
+if(leftBtn) leftBtn.addEventListener('click',leftClick);
+if(rightBtn) rightBtn.addEventListener('click',rightClick);
+
+function rightClick(){
+  if(eachWindowSize === 1880) return false;
+  eachWindowSize += 235;
+  sliderWindow.style.cssText = "transform: translateX(-"+eachWindowSize+"px); transition: .5s;";
+}
+
+function leftClick(){
+  if(eachWindowSize === 0) return false;
+  eachWindowSize -= 235;
+  sliderWindow.style.cssText = "transform: translateX(-"+eachWindowSize+"px); transition: .5s;";
+}

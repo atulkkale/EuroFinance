@@ -1575,12 +1575,13 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 
 .icon-btn-right::after{ content: "\f054";}
 
-.news-windows-all{
+.video-slider{
   margin: 0px 270px 0px 0px;
-  display: flex;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
+
+.news-windows-all{ display: flex;}
 
 .news-each-window{ 
   flex-basis: 100%; 
@@ -1761,7 +1762,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 
   .news-info p{ margin-right: 10px;}
 
-  .top-news .top-eachnews-all,.news-windows-all{ margin: 0;}
+  .top-news .top-eachnews-all,.video-slider{ margin: 0;}
 
   .news-show-more ul{ margin: 15px 0 0px 0px;}
 
