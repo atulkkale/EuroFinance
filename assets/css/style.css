@@ -144,6 +144,8 @@ header{
 
 .logo-search img{ width: 200px;}
 
+.header-form-element{ display: inline;}
+
 .logo-search input{
   width: 150px;
   height: 25px;
@@ -1201,6 +1203,8 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 
 .conferences-sign-tagline::first-letter,.conferences-signup h2::first-letter{ text-transform: uppercase;}
 
+.conference-form-element{ display: inline;}
+
 .conferences-signup input{
   width: 230px;
   padding: 7px 10px;
@@ -1320,7 +1324,7 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
 ===========================================================================================*/
 /* Header style. */
 .news-container .wrapper{
-  padding: 0 0 30px 0;
+  /* padding: 0 0 30px 0; */
   max-width: 1350px;
   width: 71%;
   margin: 0 auto;
