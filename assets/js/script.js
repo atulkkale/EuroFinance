@@ -166,7 +166,7 @@ function removeOrAddError(apply, element) { // This function shows and removes e
     case form.formInputs[0]:
       apply === 'validfield'
         ? (form.errorCount['0'] = form.formInputs[0])
-        : (form.errorCount['0'] = null); // This indicates that if current field is valid or not.
+        : (form.errorCount['0'] = null); // This indicates that if current field is valid or not. If field is valid then it's store in object so we referance it later.
       break;
 
     case form.formInputs[1]:
@@ -224,7 +224,7 @@ var maxSize = null;
 if(leftBtn) leftBtn.addEventListener('click',leftClick);
 if(rightBtn) rightBtn.addEventListener('click',rightClick);
 
-function rightClick(){
+function rightClick(){ // On right click we give style to ul and same for left.
   if(eachWindowSize === 1880) return false;
   eachWindowSize += 235;
   sliderWindow.style.cssText = "transform: translateX(-"+eachWindowSize+"px); transition: .5s;";
