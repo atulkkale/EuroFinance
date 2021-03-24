@@ -440,7 +440,8 @@ header h2::first-letter{ text-transform: uppercase;}
   border: 1px solid #0000002e;
   display: flex;
   flex-direction: column;
-  flex-basis: 30%;
+  align-items: center;
+  flex-basis: 25%;
   background-color: #0000002e;
   border-radius: 10px;
 }
@@ -449,7 +450,7 @@ header h2::first-letter{ text-transform: uppercase;}
   padding: 7px;
   border: 1px solid #2c5eab;
   border-radius: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 35px;
   display: block;
   outline: none;
 }
@@ -518,6 +519,109 @@ header h2::first-letter{ text-transform: uppercase;}
 }
 
 .corporate img{ width: 400px;}
+
+/* Js styling start. */
+.form-element{
+  position: relative;
+}
+
+.lenerror::after{
+  content: attr(data-field-name) " must be 2 to 16 charecters long!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.syntaxerror::after{
+  content: attr(data-field-name) " can not include any no, spaces!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.gmaillenerror::after{
+  content: attr(data-field-name) " must be 5 to 20 words long!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.gmailerror::after{
+  content: "Please enter proper gmail address!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.phoneerror::after{
+  content: "Please enter proper phone number!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.phonelenerror::after{
+  content: "Phone no must be 10 digits!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.passworderror::after{
+  content: "Password does not match!";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.validfield::after{
+  content: attr(data-field-name) " Valid";
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  color: green;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  bottom: 5px;
+}
+
+.form-element:last-child::after{ display: none;}
 /*=================================
   Main styling end.
 =================================*/
@@ -876,6 +980,12 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
     padding: 20px;
   }
 
+  .newsletter form input{ 
+    width: 96%;
+    margin-bottom: 50px;
+  }
+
+  .newsletter .form-element:last-child input{ margin-top: 10px;}
   .corporate img{ width: 100%;}
 
   .footer-menu{ margin: 90px 0 40px 0;}
