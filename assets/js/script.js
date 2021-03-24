@@ -54,17 +54,40 @@ function toggleMenu() {
 }
 
 // Load more js start.
-var allLi = document.querySelectorAll(".news-show-more ul li");
-var showMore = document.querySelector(".show-more-js a");
-showMore.addEventListener('click', handleShowMore);
+var allLi = document.querySelectorAll('.news-show-more ul li');
+var showMore = document.querySelector('.show-more-js a');
+if (showMore) showMore.addEventListener('click', handleShowMore);
 var start = 9; // Store start of li elementf for loop.
 
-function handleShowMore(e){
+function handleShowMore(e) {
   e.preventDefault();
-  for(i = start; i < start + 3; i++){ // Apply style to three elements each time.
-    allLi[i].style.display = "block";
-    console.log(i)
-    if(i === 17) this.parentNode.style.display = "none";
+  for (i = start; i < start + 3; i++) {
+    // Apply style to three elements each time.
+    allLi[i].style.display = 'block';
+    if (i === allLi.length - 1) this.parentNode.style.display = 'none';
   }
   start += 3;
+}
+
+// Lightbox js start.
+var clickableLi = document.querySelectorAll('.all-conferences ul li');
+if (clickableLi) clickableLi.forEach(function (clickLi) {
+    clickLi.addEventListener('click', toggleLightBox);
+  });
+
+function toggleLightBox(e) { // This function open and close lightBox.
+  e.preventDefault();
+  var clickedElemnt = e.target.tagName; // Depending upon element perform actions.
+  switch (clickedElemnt) {
+    case "IMG":
+      this.children[0].classList.add('lightBox');
+    break;
+
+    case "FIGURE":
+      this.children[0].classList.remove('lightBox');
+    break;
+  
+    default:
+      break;
+  }
 }
