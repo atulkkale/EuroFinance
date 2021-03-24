@@ -724,26 +724,45 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   .logo-search h1{ margin-bottom: 10px;}
 
   .menu{ 
+    /* height: 100%; */
+    /* width: 100%; */
     /* position: fixed; */
+    z-index: 10;
     left: 0;
     top: 0;
+    /* background-image: linear-gradient(to right, #2c5eab, #1e3066); */
     flex-direction: column;
+    /* justify-content: center; */
   }
 
+  .active{ border-radius: 2px;}
 
   .menu li{ 
-    display: none;
-    /* height: auto; */
-    /* margin: 0; */
+    height: auto;
+    /* margin: 0 0 10px 0; */
   }
 
-  /* .menu li a{ position: static;} */
+  .menu li a{ 
+    display: none;
+    padding: 5px 10px;
+    position: static;
+    font-size: 20px;
+  }
 
-  /* .menu a::before{ display: none;} */
+  .close{ 
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 
-  .menu li:last-child,.hamburger{ display: block;}
-  /* delte */
-  /* .menu li:last-child{ display: none;} */
+  .hamburger{ display: block;}
+
+  /* .menu a::before,.menu::before{ display: none;} */
 
   .core-business ul{ flex-wrap: wrap;}
 
@@ -808,6 +827,22 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   .corporate-login a:nth-child(4):hover,.social-icons ul li a:hover::before{ background-color: #fff;}
 
   .footer-menu li a:hover,.copywrite ul a:hover{ color: #fff;}
+
+  header .wrapper nav .menu .active:hover{ background-color: #439fe3;}
+
+  /* Js styling starts here. */
+  .menushow{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(to right, #2c5eab, #1e3066);
+    justify-content: center;
+    transition: all .5s;
+  }
+
+  .menushow li a{ display: block;}
+
+  .menushow a::before,.menushow::before{ display: none;}
 }
 
 /* Media query for 350px starts. */
