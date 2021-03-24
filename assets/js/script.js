@@ -24,13 +24,10 @@ function goTop() {
 
 // Hamburger js.
 var menu = document.querySelector('.menu');
-var menuLi = document.querySelectorAll('.menu li a');
 var closeHamburger = document.querySelector('.close');
 var hamburger = document.querySelector('.hamburger');
 closeHamburger.addEventListener('click', toggleMenu);
 hamburger.addEventListener('click', toggleMenu);
-
-console.log(menu);
 
 function toggleMenu() {
   var clickItemName = this.getAttribute('class');
@@ -54,4 +51,20 @@ function toggleMenu() {
     default:
       break;
   }
+}
+
+// Load more js start.
+var allLi = document.querySelectorAll(".news-show-more ul li");
+var showMore = document.querySelector(".show-more-js a");
+showMore.addEventListener('click', handleShowMore);
+var start = 9; // Store start of li elementf for loop.
+
+function handleShowMore(e){
+  e.preventDefault();
+  for(i = start; i < start + 3; i++){ // Apply style to three elements each time.
+    allLi[i].style.display = "block";
+    console.log(i)
+    if(i === 17) this.parentNode.style.display = "none";
+  }
+  start += 3;
 }
