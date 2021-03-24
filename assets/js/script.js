@@ -36,7 +36,6 @@ function toggleMenu() {
   var clickItemName = this.getAttribute('class');
   switch (clickItemName) {
     case 'hamburger':
-      hamburger.style.display = 'none';
       menu.classList.add('menushow');
       closeHamburger.style.display = 'block';
 
@@ -47,7 +46,6 @@ function toggleMenu() {
       break;
 
     case 'close':
-      hamburger.style.display = 'block';
       menu.classList.remove('menushow');
       closeHamburger.style.display = 'none';
       window.onscroll = function () {}; // Enable scroll.

@@ -843,6 +843,8 @@ footer{ background-image: linear-gradient(to right,#2c5eab,#1e3066);}
   .menushow li a{ display: block;}
 
   .menushow a::before,.menushow::before{ display: none;}
+
+  .menushow .hamburger{ display: none;}
 }
 
 /* Media query for 350px starts. */
